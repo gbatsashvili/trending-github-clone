@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -18,9 +19,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+    "jsx": "react-jsx",
+    "typeRoots": [ "./types", "./node_modules/@types"]
+  }, 
+  "exclude": ["node_modules", "typings"],
+  "include": ["src"]
 }
+ 
